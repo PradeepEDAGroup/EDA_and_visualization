@@ -1,5 +1,9 @@
 import csv
 import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import plotly.express as px
 
 covid_airport_csv = pd.read_csv('archive/covid_impact_on_airport_traffic.csv')
 
@@ -65,3 +69,4 @@ def sort_by_date():
 drop_null()
 sort_by_date()
 overall_information()
+
