@@ -274,6 +274,7 @@ def au_predict():
     plt.fill_between(lower_series.index, lower_series, upper_series, color='g', alpha=.05)
     plt.title('Forecast vs Actuals')
     plt.legend(loc='best', fontsize=8)
+    plt.savefig('../au_pob_vs_date_prediction.png', format='png')
     plt.show()
 
 
@@ -376,6 +377,7 @@ def us_predict():
     plt.fill_between(lower_series.index, lower_series, upper_series, color='g', alpha=.05)
     plt.title('Forecast vs Actuals')
     plt.legend(loc='best', fontsize=8)
+    plt.savefig('../us_pob_vs_date_prediction.png', format='png')
     plt.show()
 
 
@@ -479,6 +481,7 @@ def ca_predict():
     plt.fill_between(lower_series.index, lower_series, upper_series, color='g', alpha=.05)
     plt.title('Forecast vs Actuals')
     plt.legend(loc='best', fontsize=8)
+    plt.savefig('../us_pob_vs_date_prediction.png', format='png')
     plt.show()
 
 
@@ -487,7 +490,7 @@ def ca_predict():
 # us_pob_vs_date()
 # ca_pob_vs_date()
 # au_pob_vs_date()
-# ch_predict()
-# us_predict()
-# ca_predict()
+ch_predict()
+us_predict()
+ca_predict()
 au_predict()
