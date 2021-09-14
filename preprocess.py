@@ -17,7 +17,10 @@ def drop_null():
 def overall_information():
     # total number of lines
     number_of_lines = covid_airport_csv.shape[0]
-    print(number_of_lines)
+    number_of_columns = covid_airport_csv.shape[1]
+    print("number_of_lines:"+str(number_of_lines))
+    print("number_of_columns:" + str(number_of_columns))
+
 
     # unique value count
     airport_names = covid_airport_csv['AirportName'].unique()
@@ -44,6 +47,12 @@ def overall_information():
     ch_airport = airport_name_each_country['AirportName'].loc[2].tolist()
     us_airport = airport_name_each_country['AirportName'].loc[3].tolist()
     print(airport_number_each_country)
+    sns.set(font_scale=1.0)
+    plt.figure(figsize=[25, 12])
+    sns.barplot(data=airport_number_each_country, x='Country', y='AirportName', palette='flare')
+    plt.ylabel("AirportNumber")
+    plt.savefig('../airport_number_each_country.png', format='png')
+    plt.show()
     print(airport_name_each_country)
 
     # number of days each airport

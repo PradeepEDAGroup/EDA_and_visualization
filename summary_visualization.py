@@ -138,9 +138,6 @@ def max_pob_each_state():
     plt.show()
 
 
-
-
-
 # mean_pob_each_country()
 # mean_pob_each_state()
 # mean_pob_each_city()
@@ -151,5 +148,6 @@ def max_pob_each_state():
 # max_pob_each_airport()
 # min_pob_each_city()
 # max_pob_each_city()
-min_pob_each_state()
-max_pob_each_state()
+# min_pob_each_state()
+# max_pob_each_state()
+
